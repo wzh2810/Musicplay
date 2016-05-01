@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/img_buttom_bg_press" android:state_pressed="true"/><!--按下效果  -->
+    <item android:drawable="@drawable/img_buttom_bg_press" android:state_selected="true"/><!--选中效果  -->
+    <item android:drawable="@drawable/img_none"/><!--默认效果  -->
+</selector>

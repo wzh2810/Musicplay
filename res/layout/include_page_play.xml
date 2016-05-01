@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wz.music.views.ViewGroupHook
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_playinfo_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_minilrc"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="暂无歌词"
+                android:textColor="#00ff00" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- 1. left textview -->
+
+                <TextView
+                    android:id="@+id/tv_curduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:text="00:00"
+                    android:textColor="#ffffff" />
+                <!-- 2. right textview -->
+
+                <TextView
+                    android:id="@+id/tv_totalduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:text="00:00"
+                    android:textColor="#ffffff" />
+                <!-- 3. seekbar -->
+
+                <SeekBar
+                    android:id="@+id/sk_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@id/tv_totalduration"
+                    android:layout_toRightOf="@id/tv_curduration"
+                    android:progressDrawable="@drawable/seek_background"
+                    android:thumb="@drawable/img_none" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.wz.music.views.ViewGroupHook>

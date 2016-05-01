@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wz.music.views.ViewGroupHook
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.wz.music.views.LyricShow
+            android:id="@+id/tv_lrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            
+            android:textColor="#00ff00" />
+    </LinearLayout>
+
+</com.wz.music.views.ViewGroupHook>
